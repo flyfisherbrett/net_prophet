@@ -1,0 +1,17 @@
+<div class="card medium hoverable">
+
+    <div class="card-content kpi">
+        <span class="card-title">{{ kpiTitle }}</span>
+        <chart [options]="options" class="chart col s12"></chart>
+    </div>
+
+    <div class="card-content graph-div">
+        <span class="card-title grey-text text-darken-4 activator"><i class="material-icons right graph-info">info_outline</i></span>
+    </div>
+
+    <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">KPI Description<i class="material-icons right">close</i></span>
+        <p>{{ kpiExplanation }}</p>
+    </div>
+
+</div>

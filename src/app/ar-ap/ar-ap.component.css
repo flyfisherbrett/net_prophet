@@ -1,0 +1,12 @@
+.chart {
+    height: 400px;
+}
+
+.balances {
+    max-height: 500px;
+    overflow: scroll;
+}
+
+.collapsible-body {
+    background-color: white;
+}

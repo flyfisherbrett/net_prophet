@@ -1,1 +1,18 @@
-<h1>DASHBOARD</h1>
+<div class="row main">
+    <div class="col l12">
+        <app-cash-flow></app-cash-flow>
+    </div>
+
+    <div class="col l4 s12">
+        <app-kpi [kpiType]="'quickRatio'"></app-kpi>
+    </div>
+
+    <div class="col l4 s12">
+        <app-kpi [kpiType]="'currentRatio'"></app-kpi>
+    </div>
+
+    <div class="col l4 s12">
+        <app-kpi [kpiType]="'profitAsSales'"></app-kpi>
+    </div>
+
+</div>

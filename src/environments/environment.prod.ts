@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiEndpoint: 'http://www.cxo-api.com/'
+  apiEndpoint: 'https://www.cxo-api.com/'
 };

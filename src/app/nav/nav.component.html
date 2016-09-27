@@ -1,0 +1,60 @@
+<div class="navbar-fixed">
+  <nav class="nav-bar" role="navigation">
+    <div class="nav-wrapper">
+
+      <a id="logo-container" class="brand-logo"><img id="nav-logo" src="assets/header-logo.png"></a>
+
+      <ul *ngIf="isLoggedIn()" class="right hide-on-med-and-down">
+        <li><a  class="dropdown-button"
+                materialize="dropdown"
+                data-activates="companies-dropdown"> 
+                {{ currentCompany }} 
+                <span id="drop-arrow" class="material-icons right">arrow_drop_down</span></a></li>
+        <li><a (click)="logout($event)" href="#">Logout</a></li>
+      </ul>
+
+      <ul *ngIf="isLoggedIn()" id="companies-dropdown" class="dropdown-content">
+        <li *ngFor="let company of companies"
+            [class.active]="selectedCompany()['id'] === company.id"
+            (click)="selectCompany($event, company)">
+          <a>{{ company.name }}</a>
+        </li>
+      </ul>
+
+      <a  href="#" 
+          materialize="sideNav"
+          [materializeParams]="[{closeOnClick: true}]"
+          data-activates="slide-out" 
+          class="button-collapse"><i id="ham" class="material-icons md-18">menu</i></a>
+
+    </div>
+  </nav>
+
+  <ul id="slide-out" class="side-nav slide-out" >
+
+    <li>
+      <div class="userView">
+        <img class="background" src="assets/dollar-money.jpg">
+        <h5 *ngIf="isLoggedIn()" class="grey-text text-darken-4 truncate">{{ currentCompany }}</h5>
+        <h5 *ngIf="!isLoggedIn()" class="grey-text text-darken-4 truncate">Prophet Platform</h5>
+      </div>
+    </li>
+
+    <li [hidden]="!isLoggedIn()"><a (click)="logout($event)" href="#!">Logout</a></li>
+    <li [hidden]="isLoggedIn()"><a href="#!">Login</a></li>
+
+    <li class="divider"></li>
+
+    <li *ngFor="let company of companies"
+        [hidden]="!isLoggedIn()"
+        class="side-button"
+        data-activates="slide-out"
+        [class.active]="selectedCompany()['id'] === company.id"
+        (click)="selectCompany($event, company)">
+      <a class="truncate" href="#!">{{ company.name }}</a>
+    </li>
+
+  </ul>
+
+</div>
+

@@ -1,0 +1,47 @@
+
+  <ul class="collapsible balances" materialize="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header">
+        Who Owes You
+        <h4 class="green-text text-darken-2">{{ cTotal | currency:'USD':true:'1.2-2' }}</h4>
+      </div>
+      <div class="collapsible-body">
+        <table class="striped centered">
+          <thead>
+            <tr>
+              <th>Customer</th>
+              <th>Amount Due</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let customer of customers">
+              <td>{{ customer.name }}</td>
+              <td>{{ customer.balance | currency:'USD':true:'1.2-2' }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </li>
+    <li>
+      <div class="collapsible-header">
+        Who You Owe
+        <h4 class="red-text text-darken-4">{{ vTotal | currency:'USD':true:'1.2-2'}}</h4>
+      </div>
+      <div class="collapsible-body">
+        <table class="striped centered">
+          <thead>
+            <tr>
+              <th>Vendor</th>
+              <th>Amount Due</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let vendor of vendors">
+              <td>{{ vendor.name }}</td>
+              <td>{{ vendor.balance | currency:'USD':true:'1.2-2' }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </li>
+  </ul>

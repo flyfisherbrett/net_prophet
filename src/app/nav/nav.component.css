@@ -1,0 +1,42 @@
+.nav-bar {
+    padding-left: 4%;
+    padding-right: 4%;
+    height: 86px;
+    background-color: rgba(255,255,255,0.81);
+    border-bottom-style: solid;
+    border-bottom-width: 6px;
+    border-bottom-color: rgb(65, 135, 63);
+    color: rgb(65, 135, 63);
+}
+
+.navbar-fixed {
+    margin-bottom: 20px;
+}
+
+#nav-logo {
+    margin-top: 6px;
+    height: 68px;
+}
+
+#ham {
+    font-size: 3.3em;
+    margin-top: 10px;
+    color: rgb(65, 135, 63);
+}
+
+nav ul a {
+    height: 80px;
+    color: rgb(65, 135, 63);
+}
+
+#drop-arrow {
+    margin-top: 20px;
+}
+
+#user-view {
+    height: 100px;
+}
+
+#slide-out {
+    background-color: #f1f4f1;
+}
