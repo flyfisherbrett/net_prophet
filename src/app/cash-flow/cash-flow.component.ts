@@ -40,8 +40,9 @@ export class CashFlowComponent {
             this.drawChart();
           },
           err => {
-            console.log('found it', err.json());
-            // this.us.logout(); do something better when chart data does not return
+            if (err.json().errors.includes('Authentication token has expired')) {
+                this.us.logout();
+            }
           }
         );
     }

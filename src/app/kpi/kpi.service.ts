@@ -25,7 +25,6 @@ export class KpiService {
     }
 
     quickRatio(data) {
-        console.log(data)
         return  {
             chart: { type: 'column'},
             title: 'Test',
@@ -52,7 +51,6 @@ export class KpiService {
     }
 
     currentRatio(data) {
-        console.log(data);
         let industryD = data[0].data ? data[0].data.pop() : 0;
         let companyD = data[1].data ? data[1].data.pop() : 0;
         return  {
