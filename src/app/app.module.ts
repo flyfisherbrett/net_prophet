@@ -13,6 +13,7 @@ import { NavComponent } from './nav/nav.component';
 import { CashFlowComponent } from './cash-flow/cash-flow.component';
 import { KpiComponent } from './kpi/kpi.component';
 import { ArApComponent } from './ar-ap/ar-ap.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 import { UserService } from './user/user.service';
 
@@ -27,6 +28,7 @@ import { AppComponent } from './app.component';
     CashFlowComponent,
     KpiComponent,
     ArApComponent,
+    NotFoundComponent,
     CHART_DIRECTIVES
   ],
   imports: [
