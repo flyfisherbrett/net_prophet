@@ -1,5 +1,15 @@
 # NetProphet Dashboard
 
+## TypeScript
+
+[TypeScript](https://www.typescriptlang.org/) is just a superset of JavaScript, so don't be afraid!
+
+You have several options for working with TypeScript. Most common editors will allow you to install a TypeScript extension. This is important as you want to take advantage of the compile-time advantages you get with a typed language.
+
+I really enjoy using [Microsoft Visual Studio Code](https://code.visualstudio.com/) because of it's tight Typescript integration (it was actually built with TypeScript), but again, your favorite editor probably has an extension to take advantage of what TypeSCript provides.
+
+## Angular CLI
+
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.15.
 
 Don't forget to run npm install once you've pulled down the repo.
@@ -7,9 +17,13 @@ Don't forget to run npm install once you've pulled down the repo.
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+You can also run `ng serve` with the `-prod` flag, but right now the development and production builds both point to the actual CXO Api when making requests for data. You can change this in `environments/environment.ts`.
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class`.
+
+Scaffolding is not required. Feel free to just add files manually as you need them.
 
 ## Build
 
