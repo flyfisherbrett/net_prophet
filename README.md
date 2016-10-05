@@ -6,7 +6,7 @@
 
 You have several options for working with TypeScript. Most common editors will allow you to install a TypeScript extension. This is important as you want to take advantage of the compile-time advantages you get with a typed language.
 
-I really enjoy using [Microsoft Visual Studio Code](https://code.visualstudio.com/) because of it's tight Typescript integration (it was actually built with TypeScript), but again, your favorite editor probably has an extension to take advantage of what TypeSCript provides.
+I really enjoy using [Microsoft Visual Studio Code](https://code.visualstudio.com/) because of it's tight Typescript integration (it was actually built with TypeScript), but again, your favorite editor probably has an extension to take advantage of what TypeScript provides.
 
 ## Angular CLI
 
