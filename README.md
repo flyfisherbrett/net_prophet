@@ -17,7 +17,7 @@ Don't forget to run npm install once you've pulled down the repo.
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-You can also run `ng serve` with the `-prod` flag, but right now the development and production builds both point to the actual CXO Api when making requests for data. You can change this in `environments/environment.ts`.
+You can also run `ng serve` with the `--prod` flag, but right now the development and production builds both point to the actual CXO Api when making requests for data. You can change this in `environments/environment.ts`.
 
 ## Code scaffolding
 
